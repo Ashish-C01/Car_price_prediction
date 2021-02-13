@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>Car Price Prediction</head>
+<body>
+    <form action="" method="POST"> 
+        <input type="text" id="kms" name="kms" placeholder="Kms"><br>
+        <input type="text" id="year" name="year" placeholder="year"><br>
+        <input type="text" id="price" name="price" placeholder="price"><br>
+        <select name="FUEL" id="cars" >
+            <option value="CNG">CNG</option>
+            <option value="Petrol">PetrolL</option>
+            <option value="Diesel">Diesel</option>
+        </select>
+        <select name="Transmission" id="Transmission">
+            <option value="Automatic">Automatic</option>
+            <option value="Manual">Manual</option>
+        </select>
+        <input type="submit" name="submit">
+    </form>
+
+    <ul>
+        {% for item in pred %}
+            <li>{{item}}</li>
+         {% endfor %}
+    </ul>
+
+
+
+</body>
+</html>
+
